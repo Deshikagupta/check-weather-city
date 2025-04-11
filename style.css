@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url(./bg.webp);
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(51, 111, 160, 0.432);
+    box-shadow: 5px 5px 5px rgb(48, 48, 48) ;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+input[type="text"]{
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    width: 70%;
+    background-color: rgb(40,40,40);
+    outline: none;
+    color: aliceblue;
+}
+input[type="text"]::placeholder{
+    color: rgb(113, 113, 113);
+    font-style: italic;
+}
+button{
+    padding: 7px;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(40,40,40);
+    color: aliceblue;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+#weather-info{
+    margin-top: 15px;
+}
+#error-msg{
+    color: rgb(208, 29, 29);
+    font-weight: bold;
+    margin-top: 10px;
+}
+.hidden{
+    display: none;
+}
